@@ -1,5 +1,5 @@
-
 set appPath=app-1.1.5
+set thread=4
 
 rem 4 arguments: 
 rem  - appPath 
@@ -7,9 +7,6 @@ rem  - queue
 rem  - temp folder
 rem  - dst 
 rem  - thread
-
-set thread=4
-
 
 start  plot.bat %appPath% 1-1 D: F: %thread%
 ping 127.0.0.1 -n 800 >nul
